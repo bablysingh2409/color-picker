@@ -1,6 +1,8 @@
-import React from 'react';
+import { useContext } from 'react';
+import { colorContext } from '../Context';
 
-function ColorText({ color }) {
+function ColorText() {
+  const color = useContext(colorContext);
   return <h2 style={{ color: `${color}` }}>color : {color}</h2>;
 }
 

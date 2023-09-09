@@ -1,16 +1,16 @@
 import React from 'react';
 import ColorText from './ColorText';
-function ColorBox({ color }) {
+function ColorBox() {
   return (
     <div
       style={{
         width: '300px',
         height: '200px',
-        border: `10px solid ${color}`,
+        border: `10px solid black`,
         margin: 'auto',
       }}
     >
-      <ColorText color={color} />
+      <ColorText />
     </div>
   );
 }
